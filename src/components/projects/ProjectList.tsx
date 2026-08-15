@@ -37,19 +37,16 @@ interface Labels {
 
 interface Props {
   projects: Project[];
-  locale: string;
   labels: Labels;
 }
 
 function ProjectCard({
   project,
-  locale,
   labels,
   expanded,
   onToggle,
 }: {
   project: Project;
-  locale: string;
   labels: Labels;
   expanded: boolean;
   onToggle: () => void;
@@ -159,7 +156,7 @@ function ProjectCard({
   );
 }
 
-export default function ProjectList({ projects, locale, labels }: Props) {
+export default function ProjectList({ projects, labels }: Props) {
   const [activeIndustry, setActiveIndustry] = useState<string | null>(null);
   const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
 
@@ -223,7 +220,6 @@ export default function ProjectList({ projects, locale, labels }: Props) {
             <ProjectCard
               key={project.id}
               project={project}
-              locale={locale}
               labels={labels}
               expanded={expandedSlug === project.slug}
               onToggle={() => handleToggle(project.slug)}

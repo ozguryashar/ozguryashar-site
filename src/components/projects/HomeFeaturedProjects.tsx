@@ -11,9 +11,8 @@ const CARD_GRADIENTS = [
   "from-[#0A2647] to-primary",
 ];
 
-function FeaturedProjectCard({ project, locale, viewLabel, index }: {
+function FeaturedProjectCard({ project, viewLabel, index }: {
   project: Project;
-  locale: string;
   viewLabel: string;
   index: number;
 }) {
@@ -85,7 +84,7 @@ function FeaturedProjectCard({ project, locale, viewLabel, index }: {
   );
 }
 
-function PlaceholderCard({ index, locale, viewLabel }: { index: number; locale: string; viewLabel: string }) {
+function PlaceholderCard({ index, viewLabel }: { index: number; viewLabel: string }) {
   const placeholders = [
     { title: "Satış Performans Panosu", industry: "Perakende" },
     { title: "Finans KPI Raporu", industry: "Finans" },
@@ -120,10 +119,10 @@ export default async function HomeFeaturedProjects({ locale }: { locale: string 
 
   const cards = projects.length > 0
     ? projects.map((p, i) => (
-        <FeaturedProjectCard key={p.id} project={p} locale={locale} viewLabel={t("view")} index={i} />
+        <FeaturedProjectCard key={p.id} project={p} viewLabel={t("view")} index={i} />
       ))
     : [0, 1, 2].map((i) => (
-        <PlaceholderCard key={i} index={i} locale={locale} viewLabel={t("view")} />
+        <PlaceholderCard key={i} index={i} viewLabel={t("view")} />
       ));
 
   return (

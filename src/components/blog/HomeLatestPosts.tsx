@@ -11,11 +11,9 @@ const CARD_GRADIENTS = [
   "from-[#0A2647] to-primary",
 ];
 
-function PostCard({ post, locale, readLabel, minReadLabel, index }: {
+function PostCard({ post, readLabel, index }: {
   post: Post;
-  locale: string;
   readLabel: string;
-  minReadLabel: string;
   index: number;
 }) {
   const gradient = CARD_GRADIENTS[index % CARD_GRADIENTS.length];
@@ -134,9 +132,7 @@ export default async function HomeLatestPosts({ locale }: Props) {
           <PostCard
             key={post.id}
             post={post}
-            locale={locale}
             readLabel={tBlog("read")}
-            minReadLabel={tBlog("min_read")}
             index={i}
           />
         ))}

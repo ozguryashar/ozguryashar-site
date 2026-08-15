@@ -24,7 +24,6 @@ async function ProjectsLoader({ locale }: { locale: string }) {
   return (
     <ProjectList
       projects={projects}
-      locale={locale}
       labels={{
         filterAll: t("filter_all"),
         viewReport: t("view_report"),

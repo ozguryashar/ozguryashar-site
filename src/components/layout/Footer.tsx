@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Mail } from "lucide-react";
 
 function LinkedInIcon({ size = 15 }: { size?: number }) {
@@ -13,7 +13,6 @@ function LinkedInIcon({ size = 15 }: { size?: number }) {
 export default function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
-  const locale = useLocale();
 
   const links = [
     { key: "home", href: "/" },

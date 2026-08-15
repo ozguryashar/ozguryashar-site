@@ -35,11 +35,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // ─── CTA sidebar card ─────────────────────────────────────────────────────────
 function ProjectCTA({
-  locale,
   title,
   btnLabel,
 }: {
-  locale: string;
   title: string;
   btnLabel: string;
 }) {
@@ -59,10 +57,8 @@ function ProjectCTA({
 // ─── Related project mini-card ────────────────────────────────────────────────
 function RelatedCard({
   project,
-  locale,
 }: {
   project: { slug: string; title: string; industry: string; cover_image_url: string | null };
-  locale: string;
 }) {
   return (
     <Link
@@ -178,7 +174,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                 </h2>
                 <div className="flex flex-col gap-3">
                   {related.map((r) => (
-                    <RelatedCard key={r.id} project={r} locale={locale} />
+                    <RelatedCard key={r.id} project={r} />
                   ))}
                 </div>
               </div>
@@ -232,7 +228,6 @@ export default async function ProjectDetailPage({ params }: Props) {
 
               {/* CTA card */}
               <ProjectCTA
-                locale={locale}
                 title={t("detail.cta_title")}
                 btnLabel={t("detail.cta_btn")}
               />

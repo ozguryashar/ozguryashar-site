@@ -8,15 +8,16 @@ import {
   Database,
   LineChart,
   Mail,
+  Phone,
   ArrowRight,
   CheckCircle2,
   TrendingUp,
   Users,
   Award,
-  Star,
 } from "lucide-react";
 import HomeFeaturedProjects from "@/components/projects/HomeFeaturedProjects";
 import HomeLatestPosts from "@/components/blog/HomeLatestPosts";
+import ProfileAvatar from "@/components/shared/ProfileAvatar";
 
 function LinkedInIcon({ size = 16 }: { size?: number }) {
   return (
@@ -202,10 +203,10 @@ export default function HomePage() {
               </h1>
               <p className="max-w-xl text-base leading-relaxed text-white/60 md:text-lg">{hero("subtext")}</p>
               <div className="flex flex-wrap justify-center gap-3 md:justify-start">
-                <Link href={`/${locale}/projects`} className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-bold text-text-main shadow-lg btn-glow transition-all duration-300 hover:-translate-y-0.5">
+                <Link href="/projects" className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-bold text-text-main shadow-lg btn-glow transition-all duration-300 hover:-translate-y-0.5">
                   {hero("cta_primary")} <ArrowRight size={15} />
                 </Link>
-                <Link href={`/${locale}/blog`} className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5">
+                <Link href="/blog" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5">
                   {hero("cta_secondary")}
                 </Link>
               </div>
@@ -337,24 +338,11 @@ export default function HomePage() {
           <div className="flex flex-col items-center gap-12 md:flex-row">
             {/* Avatar card */}
             <div className="flex-1 flex justify-center">
-              <div className="relative">
-                <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/20 via-highlight/15 to-accent/20 blur-xl" />
-                <div className="relative h-64 w-64 rounded-3xl bg-gradient-to-br from-primary to-[#0A2647] border border-white/10 shadow-2xl flex flex-col items-center justify-center gap-4 overflow-hidden">
-                  <div className="absolute inset-0 hero-grid opacity-20" />
-                  <div className="relative z-10 h-20 w-20 rounded-full bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center shadow-lg">
-                    <span className="text-2xl font-extrabold text-text-main">ÖY</span>
-                  </div>
-                  <div className="relative z-10 text-center px-6">
-                    <p className="text-sm font-bold text-white">Özgür Yaşar</p>
-                    <p className="text-xs text-white/50 mt-1">Data & BI Specialist</p>
-                  </div>
-                  {/* Stars */}
-                  <div className="relative z-10 flex items-center gap-0.5">
-                    {[0,1,2,3,4].map((i) => <Star key={i} size={12} className="text-accent fill-accent" />)}
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
-                </div>
-              </div>
+              <Suspense fallback={
+                <div className="h-64 w-64 rounded-3xl bg-gradient-to-br from-primary to-[#0A2647] animate-pulse" />
+              }>
+                <ProfileAvatar />
+              </Suspense>
             </div>
             {/* Text */}
             <div className="flex-1 space-y-5 text-center md:text-left">
@@ -371,7 +359,7 @@ export default function HomePage() {
                   </span>
                 ))}
               </div>
-              <Link href={`/${locale}/about`} className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all duration-300 hover:-translate-y-0.5 shadow-sm">
+              <Link href="/about" className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all duration-300 hover:-translate-y-0.5 shadow-sm">
                 {about("cta").replace(" →", "")} <ArrowRight size={15} />
               </Link>
             </div>
@@ -397,6 +385,9 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href={`mailto:${strip("email_btn")}`} className="inline-flex items-center gap-2.5 rounded-xl bg-accent px-6 py-3 text-sm font-bold text-text-main shadow-lg btn-glow transition-all duration-300 hover:-translate-y-0.5">
               <Mail size={15} /> {strip("email_btn")}
+            </a>
+            <a href={`tel:${strip("phone").replace(/\s/g, "")}`} className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5">
+              <Phone size={15} /> {strip("phone")}
             </a>
             <a href="https://linkedin.com/in/ozguryasar1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15 transition-all duration-300 hover:-translate-y-0.5">
               <LinkedInIcon size={15} /> {strip("linkedin_label")}

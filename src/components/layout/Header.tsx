@@ -6,11 +6,11 @@ import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { key: "home" as const, href: "/tr" },
-  { key: "blog" as const, href: "/tr/blog" },
-  { key: "projects" as const, href: "/tr/projects" },
-  { key: "about" as const, href: "/tr/about" },
-  { key: "contact" as const, href: "/tr/contact" },
+  { key: "home" as const, href: "/" },
+  { key: "blog" as const, href: "/blog" },
+  { key: "projects" as const, href: "/projects" },
+  { key: "about" as const, href: "/about" },
+  { key: "contact" as const, href: "/contact" },
 ];
 
 export default function Header() {
@@ -35,11 +35,8 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
 
         {/* Logo */}
-        <Link href="/tr" className="flex items-center gap-2.5 shrink-0 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-highlight text-white text-sm font-extrabold select-none shadow-sm transition-transform group-hover:scale-105">
-            ÖY
-          </div>
-          <span className="text-base font-bold text-text-main">Özgür Yaşar</span>
+        <Link href="/" className="shrink-0 rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+          Özgür Yaşar
         </Link>
 
         {/* Desktop nav */}
@@ -58,8 +55,8 @@ export default function Header() {
         {/* CTA */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/tr/contact"
-            className="rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"
+            href="/contact"
+            className="rounded-xl bg-accent px-5 py-2.5 text-sm font-bold text-text-main hover:bg-accent/90 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"
           >
             {t("cta")}
           </Link>
@@ -92,9 +89,9 @@ export default function Header() {
           </nav>
           <div className="mt-4 px-1">
             <Link
-              href="/tr/contact"
+              href="/contact"
               onClick={() => setOpen(false)}
-              className="block w-full rounded-xl bg-primary px-5 py-2.5 text-center text-sm font-bold text-white hover:bg-primary/90 transition-colors"
+              className="block w-full rounded-xl bg-accent px-5 py-2.5 text-center text-sm font-bold text-text-main hover:bg-accent/90 transition-colors"
             >
               {t("cta")}
             </Link>

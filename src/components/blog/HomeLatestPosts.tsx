@@ -27,7 +27,7 @@ function PostCard({ post, locale, readLabel, minReadLabel, index }: {
 
   return (
     <Link
-      href={`/${locale}/blog/${post.slug}`}
+      href={`/blog/${post.slug}`}
       className="group relative flex flex-col rounded-2xl border border-border bg-white overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl card-shine gradient-border"
     >
       {/* Top accent */}
@@ -143,7 +143,7 @@ export default async function HomeLatestPosts({ locale }: Props) {
       </div>
       <div className="mt-10 text-center">
         <Link
-          href={`/${locale}/blog`}
+          href="/blog"
           className="inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-white shadow-sm hover:bg-accent hover:text-text-main transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
         >
           {t("all")}

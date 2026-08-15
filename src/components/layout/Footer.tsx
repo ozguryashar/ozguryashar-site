@@ -16,11 +16,11 @@ export default function Footer() {
   const locale = useLocale();
 
   const links = [
-    { key: "home", href: `/${locale}` },
-    { key: "blog", href: `/${locale}/blog` },
-    { key: "projects", href: `/${locale}/projects` },
-    { key: "about", href: `/${locale}/about` },
-    { key: "contact", href: `/${locale}/contact` },
+    { key: "home", href: "/" },
+    { key: "blog", href: "/blog" },
+    { key: "projects", href: "/projects" },
+    { key: "about", href: "/about" },
+    { key: "contact", href: "/contact" },
   ] as const;
 
   return (
@@ -48,9 +48,6 @@ export default function Footer() {
           {/* Logo + tagline */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-accent to-accent/70 text-text-main text-sm font-extrabold select-none">
-                ÖY
-              </div>
               <span className="text-base font-bold text-white">Özgür Yaşar</span>
             </div>
             <p className="text-sm text-white/55 leading-relaxed max-w-xs">

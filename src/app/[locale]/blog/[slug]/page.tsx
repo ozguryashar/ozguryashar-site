@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Back link */}
           <Link
-            href={`/${locale}/blog`}
+            href="/blog"
             className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
           >
             <ArrowLeft size={14} />

@@ -25,7 +25,7 @@ export default function BlogCard({ post, locale, readLabel, minReadLabel }: Prop
   return (
     <article className="group flex flex-col rounded-2xl border border-border bg-white overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
       {/* Cover */}
-      <Link href={`/${locale}/blog/${post.slug}`} tabIndex={-1} aria-hidden>
+      <Link href={`/blog/${post.slug}`} tabIndex={-1} aria-hidden>
         <div className="relative h-48 w-full overflow-hidden">
           {post.cover_image_url ? (
             <Image
@@ -62,7 +62,7 @@ export default function BlogCard({ post, locale, readLabel, minReadLabel }: Prop
         )}
 
         {/* Title */}
-        <Link href={`/${locale}/blog/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`}>
           <h2 className="line-clamp-2 text-sm font-semibold leading-snug text-text-main group-hover:text-primary transition-colors">
             {post.title}
           </h2>
@@ -85,7 +85,7 @@ export default function BlogCard({ post, locale, readLabel, minReadLabel }: Prop
             </span>
           </div>
           <Link
-            href={`/${locale}/blog/${post.slug}`}
+            href={`/blog/${post.slug}`}
             className="text-xs font-semibold text-highlight hover:text-primary transition-colors"
           >
             {readLabel}

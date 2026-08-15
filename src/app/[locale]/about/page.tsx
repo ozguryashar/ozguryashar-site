@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { Award, CheckCircle2, Mail, ArrowRight } from "lucide-react";
+import { createClient } from "@/lib/supabase/server";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -127,7 +129,18 @@ function WhyCard({ title, desc, index }: { title: string; desc: string; index: n
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about" });
+  const [t, supabase] = await Promise.all([
+    getTranslations({ locale, namespace: "about" }),
+    createClient(),
+  ]);
+
+  const { data: profileData } = await supabase
+    .from("profile")
+    .select("photo_url")
+    .eq("id", 1)
+    .single();
+
+  const photoUrl = profileData?.photo_url ?? null;
 
   const skills = t.raw("skills") as {
     core_title: string; core: { name: string; level: number }[];
@@ -166,20 +179,32 @@ export default async function AboutPage({ params }: Props) {
               <div className="relative">
                 <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-accent/30 via-highlight/20 to-primary/30 blur-xl" />
                 <div className="relative h-52 w-52 rounded-3xl bg-gradient-to-br from-[#0A2647] to-primary border border-white/10 shadow-2xl flex flex-col items-center justify-center gap-4 overflow-hidden md:h-64 md:w-64">
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      backgroundImage: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
-                      backgroundSize: "24px 24px",
-                    }}
-                  />
-                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent/60 text-3xl font-extrabold text-text-main shadow-lg select-none">
-                    ÖY
-                  </div>
-                  <div className="relative z-10 text-center px-4">
-                    <p className="text-sm font-bold text-white">Özgür Yaşar</p>
-                    <p className="text-xs text-white/50 mt-1">Data & BI Specialist</p>
-                  </div>
+                  {photoUrl ? (
+                    <Image
+                      src={photoUrl}
+                      alt="Özgür Yaşar"
+                      fill
+                      className="object-cover"
+                      sizes="256px"
+                    />
+                  ) : (
+                    <>
+                      <div
+                        className="absolute inset-0"
+                        style={{
+                          backgroundImage: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
+                          backgroundSize: "24px 24px",
+                        }}
+                      />
+                      <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent/60 text-3xl font-extrabold text-text-main shadow-lg select-none">
+                        ÖY
+                      </div>
+                      <div className="relative z-10 text-center px-4">
+                        <p className="text-sm font-bold text-white">Özgür Yaşar</p>
+                        <p className="text-xs text-white/50 mt-1">Data & BI Specialist</p>
+                      </div>
+                    </>
+                  )}
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
                 </div>
               </div>
@@ -210,7 +235,7 @@ export default async function AboutPage({ params }: Props) {
                   {t("cta_linkedin")}
                 </a>
                 <Link
-                  href={`/${locale}/contact`}
+                  href="/contact"
                   className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-sm font-bold text-text-main shadow-sm hover:bg-accent/90 transition-all duration-200"
                 >
                   <Mail size={15} />
@@ -323,7 +348,7 @@ export default async function AboutPage({ params }: Props) {
             Projeniz için hemen iletişime geçin.
           </p>
           <Link
-            href={`/${locale}/contact`}
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-sm font-bold text-text-main shadow-lg hover:bg-accent/90 transition-all duration-300 hover:-translate-y-0.5"
           >
             İletişime Geç

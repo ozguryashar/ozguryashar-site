@@ -13,6 +13,7 @@ import {
   Menu,
   X,
   ExternalLink,
+  UserCircle,
 } from "lucide-react";
 
 const NAV = [
@@ -20,6 +21,7 @@ const NAV = [
   { href: "/admin/blog", label: "Blog Yazıları", icon: FileText, exact: false },
   { href: "/admin/projects", label: "Projeler", icon: FolderKanban, exact: false },
   { href: "/admin/messages", label: "Mesajlar", icon: MessageSquare, exact: false },
+  { href: "/admin/profile", label: "Profil Fotoğrafı", icon: UserCircle, exact: false },
 ];
 
 interface Props {

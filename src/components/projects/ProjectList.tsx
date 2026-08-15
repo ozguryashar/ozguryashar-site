@@ -60,7 +60,7 @@ function ProjectCard({
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-white overflow-hidden shadow-sm transition-shadow hover:shadow-md">
       {/* Cover */}
-      <Link href={`/${locale}/projects/${project.slug}`} className="relative block h-48 w-full overflow-hidden group">
+      <Link href={`/projects/${project.slug}`} className="relative block h-48 w-full overflow-hidden group">
         {project.cover_image_url ? (
           <Image
             src={project.cover_image_url}
@@ -82,7 +82,7 @@ function ProjectCard({
 
       {/* Body */}
       <div className="flex flex-1 flex-col gap-3 p-5">
-        <Link href={`/${locale}/projects/${project.slug}`}>
+        <Link href={`/projects/${project.slug}`}>
           <h3 className="font-semibold text-text-main hover:text-primary transition-colors line-clamp-2">
             {project.title}
           </h3>
@@ -126,7 +126,7 @@ function ProjectCard({
             </button>
           ) : (
             <Link
-              href={`/${locale}/projects/${project.slug}`}
+              href={`/projects/${project.slug}`}
               className="flex items-center gap-1.5 rounded-lg border border-border px-4 py-2 text-xs font-semibold text-muted-foreground hover:border-primary hover:text-primary transition-colors"
             >
               <LayoutDashboard size={13} />
@@ -134,7 +134,7 @@ function ProjectCard({
             </Link>
           )}
           <Link
-            href={`/${locale}/contact?subject=proje`}
+            href="/contact?subject=proje"
             className="text-xs font-medium text-highlight hover:text-primary transition-colors"
           >
             {labels.similarCta}

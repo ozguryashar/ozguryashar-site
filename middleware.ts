@@ -14,11 +14,6 @@ const intlMiddleware = createMiddleware({
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Root "/" → redirect to default locale
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url));
-  }
-
   // Protect all /admin/* routes (except /admin/login)
   if (pathname.startsWith("/admin") && !pathname.startsWith("/admin/login")) {
     let response = NextResponse.next({ request });
@@ -61,7 +56,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all pathnames except internals and static files
     "/((?!_next|_vercel|.*\\..*).*)",
     "/admin/:path*",
   ],

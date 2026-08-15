@@ -47,7 +47,7 @@ function ProjectCTA({
     <div className="rounded-2xl bg-primary p-5 text-white">
       <p className="mb-3 text-sm font-semibold leading-snug">{title}</p>
       <Link
-        href={`/${locale}/contact?subject=proje`}
+        href="/contact?subject=proje"
         className="inline-flex w-full items-center justify-center rounded-lg bg-accent px-4 py-2.5 text-xs font-bold text-text-main hover:bg-accent/90 transition-colors"
       >
         {btnLabel}
@@ -66,7 +66,7 @@ function RelatedCard({
 }) {
   return (
     <Link
-      href={`/${locale}/projects/${project.slug}`}
+      href={`/projects/${project.slug}`}
       className="group flex items-center gap-3 rounded-xl border border-border bg-white p-3 hover:border-primary transition-colors"
     >
       <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-surface">
@@ -107,7 +107,7 @@ export default async function ProjectDetailPage({ params }: Props) {
 
         {/* Back link */}
         <Link
-          href={`/${locale}/projects`}
+          href="/projects"
           className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
         >
           <ArrowLeft size={14} />

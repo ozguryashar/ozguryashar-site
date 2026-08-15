@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { Mail, Clock, MapPin } from "lucide-react";
+import { Mail, Clock, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/components/contact/ContactForm";
 
 interface Props {
@@ -95,7 +95,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
           </div>
 
           {/* ── Info (right) ──────────────────────────────────────────────── */}
-          <aside className="lg:w-72 shrink-0 space-y-4">
+          <aside className="lg:w-80 shrink-0 space-y-4">
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
               {t("info_title")}
             </p>
@@ -113,6 +113,22 @@ export default async function ContactPage({ params, searchParams }: Props) {
                   {t("email_label")}
                 </p>
                 <p className="text-sm font-semibold text-text-main break-all group-hover:text-primary transition-colors">{t("email_value")}</p>
+              </div>
+            </a>
+
+            {/* Phone */}
+            <a
+              href={`tel:${t("phone_value").replace(/\s/g, "")}`}
+              className="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 hover:border-primary/40 hover:shadow-md transition-all duration-200 group"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 text-white shadow-sm">
+                <Phone size={18} />
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-0.5">
+                  {t("phone_label")}
+                </p>
+                <p className="text-sm font-semibold text-text-main group-hover:text-primary transition-colors">{t("phone_value")}</p>
               </div>
             </a>
 

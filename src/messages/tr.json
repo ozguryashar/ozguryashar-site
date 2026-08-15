@@ -45,6 +45,7 @@
     "title": "Projenizi Konuşalım",
     "subtitle": "Ücretsiz bir keşif görüşmesi için yazın.",
     "email_btn": "ozguryasar_24@hotmail.com",
+    "phone": "+90 543 347 97 98",
     "linkedin_label": "LinkedIn"
   },
   "projects_page": {
@@ -215,6 +216,8 @@
     "info_title": "İletişim Bilgileri",
     "email_label": "E-posta",
     "email_value": "ozguryasar_24@hotmail.com",
+    "phone_label": "Telefon",
+    "phone_value": "+90 543 347 97 98",
     "linkedin_label": "LinkedIn",
     "linkedin_value": "linkedin.com/in/ozguryasar1",
     "response_time_label": "Yanıt Süresi",

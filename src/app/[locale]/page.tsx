@@ -170,10 +170,10 @@ export default function HomePage() {
   const aboutSkills = about.raw("skills") as string[];
 
   const stats = [
-    { icon: <BarChart3 size={28} />, value: "50+", label: locale === "tr" ? "Power BI Raporu" : "Power BI Reports", sublabel: locale === "tr" ? "Teslim Edildi" : "Delivered", gradient: "from-primary to-highlight" },
-    { icon: <LayoutDashboard size={28} />, value: "30+", label: locale === "tr" ? "Dashboard" : "Dashboards", sublabel: locale === "tr" ? "Tasarlandı" : "Designed", gradient: "from-highlight to-[#0A2647]" },
-    { icon: <Users size={28} />, value: "20+", label: locale === "tr" ? "Memnun Müşteri" : "Happy Clients", sublabel: locale === "tr" ? "Referans Veriyor" : "Give Reference", gradient: "from-[#0A2647] to-primary" },
-    { icon: <Award size={28} />, value: "5+", label: locale === "tr" ? "Yıl Deneyim" : "Years Experience", sublabel: locale === "tr" ? "Veri Alanında" : "In Data Field", gradient: "from-primary to-accent/80" },
+    { icon: <BarChart3 size={28} />, value: "150+", label: "Power BI Raporu", sublabel: "Teslim Edildi", gradient: "from-primary to-highlight" },
+    { icon: <LayoutDashboard size={28} />, value: "50+", label: "Dashboard", sublabel: "Tasarlandı", gradient: "from-highlight to-[#0A2647]" },
+    { icon: <Users size={28} />, value: "20+", label: "Memnun Müşteri", sublabel: "Referans Veriyor", gradient: "from-[#0A2647] to-primary" },
+    { icon: <Award size={28} />, value: "7+", label: "Yıl Deneyim", sublabel: "Veri Alanında", gradient: "from-primary to-accent/80" },
   ];
 
   return (
@@ -212,7 +212,7 @@ export default function HomePage() {
               </div>
               {/* Quick stats */}
               <div className="flex flex-wrap justify-center gap-6 pt-1 md:justify-start">
-                {[{ val: "50+", label: "Power BI" }, { val: "30+", label: "Dashboard" }, { val: "5+", label: locale === "tr" ? "Yıl" : "Years" }].map(({ val, label }) => (
+                {[{ val: "150+", label: "Power BI" }, { val: "50+", label: "Dashboard" }, { val: "7+", label: "Yıl" }].map(({ val, label }) => (
                   <div key={label} className="text-center md:text-left">
                     <p className="text-xl font-extrabold gradient-text-gold">{val}</p>
                     <p className="text-xs text-white/45 mt-0.5">{label}</p>
@@ -237,6 +237,11 @@ export default function HomePage() {
       {/* ── STATS ─────────────────────────────────────────────────────────── */}
       <section className="bg-background py-10 md:py-14">
         <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-8 text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary/60 mb-1">Rakamlarla</p>
+            <h2 className="text-2xl font-extrabold text-text-main md:text-3xl">Tecrübem</h2>
+            <div className="mt-2 mx-auto h-1 w-12 rounded-full bg-gradient-to-r from-primary to-highlight" />
+          </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {stats.map(({ icon, value, label, sublabel, gradient }) => (
               <div

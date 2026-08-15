@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "blog": "Blog",
+    "projects": "Projeler",
+    "about": "Hakkımda",
+    "contact": "İletişim",
+    "cta": "İletişime Geç"
+  },
+  "hero": {
+    "label": "Veri Analisti ve İş Zekası Uzmanı",
+    "heading": "Verinizi İçgörüye, İçgörünüzü Karara Dönüştürüyorum",
+    "subtext": "Şirketinize özel Power BI raporları, dashboard tasarımı ve veri modelleme çözümleri üretiyorum.",
+    "cta_primary": "Projelerimi Gör",
+    "cta_secondary": "Blog"
+  },
+  "services": {
+    "title": "Neler Yapıyorum?",
+    "powerbi": { "title": "Power BI Raporlama", "desc": "Kurumunuza özel interaktif raporlar ve görsel veri anlatımı.", "badge": "50+ Rapor" },
+    "dashboard": { "title": "Dashboard Tasarımı", "desc": "KPI odaklı, sezgisel ve kullanıcı dostu gösterge panelleri.", "badge": "30+ Dashboard" },
+    "etl": { "title": "Veri Modelleme & ETL", "desc": "Temiz, güvenilir ve ölçeklenebilir veri altyapısı kurulumu.", "badge": "10+ Pipeline" },
+    "consulting": { "title": "Analitik Danışmanlık", "desc": "Veri stratejisi, süreç iyileştirme ve ekip eğitimi.", "badge": "5+ Yıl" }
+  },
+  "featured_projects": {
+    "title": "Öne Çıkan Projeler",
+    "view": "Canlı Göster →",
+    "all": "Tüm Projeleri Gör"
+  },
+  "latest_posts": {
+    "title": "Son Yazılar",
+    "all": "Tüm Yazıları Oku",
+    "min_read": "dk okuma",
+    "posts": [
+      { "title": "Power BI'da DAX ile Zaman Zekası", "date": "10 Ağu 2025", "read_time": "8", "tags": ["DAX", "Power BI"] },
+      { "title": "Star Schema vs Snowflake: Hangisini Seçmeli?", "date": "2 Ağu 2025", "read_time": "6", "tags": ["Veri Modelleme", "SQL"] },
+      { "title": "ETL Pipeline Tasarımında 5 Kritik Hata", "date": "25 Tem 2025", "read_time": "5", "tags": ["ETL", "Python"] }
+    ]
+  },
+  "about_teaser": {
+    "bio": "Veri dünyasında 5+ yıllık deneyimle firmalara özel Power BI çözümleri, veri modelleme ve analitik danışmanlık hizmetleri sunuyorum.",
+    "cta": "Hakkımda Daha Fazla →",
+    "skills": ["Power BI", "DAX", "Power Query", "SQL", "Python"]
+  },
+  "contact_strip": {
+    "title": "Projenizi Konuşalım",
+    "subtitle": "Ücretsiz bir keşif görüşmesi için yazın.",
+    "email_btn": "ozguryasar_24@hotmail.com",
+    "linkedin_label": "LinkedIn"
+  },
+  "projects_page": {
+    "title": "Projeler",
+    "meta_desc": "Power BI raporları, dashboard tasarımları ve veri modelleme projelerimi inceleyin.",
+    "subtitle": "Power BI raporları, dashboard tasarımları ve veri modelleme çalışmalarımı inceleyin.",
+    "filter_all": "Tümü",
+    "view_report": "Raporu Gör",
+    "hide_report": "Kapat",
+    "fullscreen": "Tam Ekran",
+    "live_report": "Canlı Raporu Görüntüle",
+    "loading": "Rapor yükleniyor...",
+    "similar_cta": "Benzer Proje İster misiniz?",
+    "no_projects": "Bu kategoride henüz proje yok.",
+    "industries": ["Perakende", "Finans", "Lojistik", "Üretim", "Sağlık", "E-ticaret"],
+    "detail": {
+      "industry": "Sektör",
+      "tech": "Kullanılan Teknolojiler",
+      "date": "Tarih",
+      "cta_title": "Bu tür bir rapor ister misiniz?",
+      "cta_btn": "Proje Talep Et",
+      "related": "Benzer Projeler",
+      "back": "← Projelere Dön"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "meta_desc": "Veri, analitik ve iş zekası üzerine yazılar. Power BI, DAX, SQL ve veri modelleme.",
+    "subtitle": "Veri, analitik ve iş zekası üzerine yazılar.",
+    "read_more": "Devamını Oku",
+    "read": "Oku →",
+    "min_read": "dk okuma",
+    "no_posts": "Henüz yazı yok.",
+    "no_posts_desc": "Yakında içerikler eklenecek.",
+    "search_placeholder": "Yazılarda ara...",
+    "tag_all": "Tümü",
+    "prev": "← Önceki",
+    "next": "Sonraki →",
+    "back": "← Blog'a Dön",
+    "author_bio": "Veri & İş Zekası uzmanı. Power BI, DAX ve veri modelleme konularında 5+ yıllık deneyim.",
+    "share_title": "Paylaş",
+    "share_copy": "Linki Kopyala",
+    "share_copied": "Kopyalandı!",
+    "share_linkedin": "LinkedIn'de Paylaş",
+    "toc_title": "İçindekiler",
+    "related_title": "İlgili Yazılar",
+    "by": "Özgür Yaşar tarafından",
+    "loading": "Yazılar yükleniyor..."
+  },
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "Gerçek iş problemlerine geliştirdiğim çözümler.",
+    "view_project": "Projeyi İncele",
+    "featured": "Öne Çıkan",
+    "no_projects": "Henüz proje yok.",
+    "loading": "Projeler yükleniyor..."
+  },
+  "about": {
+    "title": "Hakkımda",
+    "meta_desc": "Özgür Yaşar — Veri & İş Zekası Uzmanı. Power BI, DAX, SQL ve veri modelleme konularında 5+ yıllık deneyim.",
+    "hero_title": "Veri & İş Zekası Uzmanı",
+    "bio": "Veri dünyasında şirketlere özel Power BI raporlama ve dashboard çözümleri üretiyorum. Veriyi sadece görselleştirmekle kalmıyor; iş kararlarına dönüştürecek anlamlı içgörüler ortaya çıkarıyorum.",
+    "cta_linkedin": "LinkedIn",
+    "cta_contact": "İletişime Geç",
+    "skills_title": "Uzmanlık Alanlarım",
+    "skills": {
+      "core_title": "Temel Araçlar",
+      "core": [
+        { "name": "Power BI", "level": 95 },
+        { "name": "DAX", "level": 90 },
+        { "name": "Power Query", "level": 88 },
+        { "name": "Veri Modelleme", "level": 85 }
+      ],
+      "data_title": "Veri & Mühendislik",
+      "data": [
+        { "name": "SQL", "level": 88 },
+        { "name": "Python (pandas)", "level": 75 },
+        { "name": "ETL", "level": 80 },
+        { "name": "Azure Data Factory", "level": 70 }
+      ],
+      "strategy_title": "Strateji & Tasarım",
+      "strategy": [
+        { "name": "KPI Tasarımı", "level": 90 },
+        { "name": "Veri Hikayeciliği", "level": 85 },
+        { "name": "Dashboard UX", "level": 88 }
+      ]
+    },
+    "experience_title": "Deneyim",
+    "experience": [
+      {
+        "company": "Freelance / Bağımsız Danışman",
+        "role": "Veri & BI Danışmanı",
+        "period": "2022 — Günümüz",
+        "bullets": [
+          "KOBİ ve kurumsal müşteriler için 50+ Power BI dashboard tasarımı",
+          "Veri modelleme ve ETL süreç danışmanlığı",
+          "Raporlama altyapısı kurulumu ve ekip eğitimi"
+        ]
+      },
+      {
+        "company": "Önceki Pozisyon",
+        "role": "İş Analist / BI Geliştirici",
+        "period": "2020 — 2022",
+        "bullets": [
+          "Kurumsal raporlama sistemlerinin tasarımı ve geliştirilmesi",
+          "Satış ve operasyon verilerinin analizi",
+          "Yönetim raporları ve KPI dashboardları"
+        ]
+      },
+      {
+        "company": "Staj / Erken Kariyer",
+        "role": "Veri Analisti",
+        "period": "2019 — 2020",
+        "bullets": [
+          "SQL ve Excel ile veri temizleme ve raporlama",
+          "Dashboard prototip geliştirme",
+          "İş zekası süreçlerine dahil olma"
+        ]
+      }
+    ],
+    "certs_title": "Sertifikalar",
+    "certs": [
+      { "name": "Microsoft PL-300", "full": "Power BI Data Analyst Associate", "issuer": "Microsoft", "year": "2023" },
+      { "name": "DP-900", "full": "Azure Data Fundamentals", "issuer": "Microsoft", "year": "2022" },
+      { "name": "SQL Advanced", "full": "HackerRank SQL (Advanced)", "issuer": "HackerRank", "year": "2022" }
+    ],
+    "why_title": "Neden Benimle Çalışmalısınız?",
+    "why": [
+      { "title": "Freelance Esnekliği", "desc": "Hızlı dönüş süreleri, doğrudan iletişim ve esnek çalışma modeli. Kurum içi bir ekip gibi değil, daha hızlı." },
+      { "title": "Ölçülebilir Sonuç", "desc": "Her rapor bir KPI hedefine bağlıdır. Veriden karar çıkarmak için tasarlanmış, süslü değil işlevsel çözümler." },
+      { "title": "Uzun Vadeli Destek", "desc": "Teslimle iş bitmez. Güncelleme, bakım ve geliştirme için teslim sonrasında da yanınızdayım." }
+    ]
+  },
+  "contact": {
+    "title": "İletişim",
+    "meta_desc": "Projeniz için Özgür Yaşar ile iletişime geçin. Power BI, dashboard ve veri danışmanlığı.",
+    "subtitle": "Bir projeniz mi var? Konuşalım.",
+    "form_title": "Mesaj Gönderin",
+    "name": "Ad Soyad",
+    "name_placeholder": "Ahmet Yılmaz",
+    "company": "Şirket",
+    "company_placeholder": "Şirket adı (isteğe bağlı)",
+    "email": "E-posta",
+    "email_placeholder": "ahmet@sirket.com",
+    "subject": "Konu",
+    "subject_placeholder": "Konu seçin",
+    "subjects": [
+      { "value": "powerbi", "label": "Power BI Raporu" },
+      { "value": "dashboard", "label": "Dashboard Tasarımı" },
+      { "value": "consulting", "label": "Veri Danışmanlığı" },
+      { "value": "other", "label": "Diğer" }
+    ],
+    "message": "Mesaj",
+    "message_placeholder": "Projeniz hakkında kısaca bilgi verin...",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "success_title": "Mesajınız iletildi!",
+    "success_desc": "En kısa sürede, genellikle 24 saat içinde dönüş yapacağım.",
+    "success_reset": "Yeni Mesaj Gönder",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "validation": {
+      "name_required": "Ad Soyad zorunludur.",
+      "email_required": "E-posta zorunludur.",
+      "email_invalid": "Geçerli bir e-posta girin.",
+      "message_required": "Mesaj zorunludur.",
+      "message_min": "Mesaj en az 10 karakter olmalıdır."
+    },
+    "info_title": "İletişim Bilgileri",
+    "email_label": "E-posta",
+    "email_value": "ozguryasar_24@hotmail.com",
+    "linkedin_label": "LinkedIn",
+    "linkedin_value": "linkedin.com/in/ozguryasar1",
+    "response_time_label": "Yanıt Süresi",
+    "response_time": "Genellikle 24 saat içinde dönüş yapıyorum.",
+    "location_label": "Konum",
+    "location": "İstanbul, Türkiye",
+    "timezone": "UTC+3 — Türkiye saatiyle çalışıyorum"
+  },
+  "footer": {
+    "tagline": "Veriden karara.",
+    "rights": "© 2025 Özgür Yaşar. Tüm hakları saklıdır.",
+    "nav_title": "Sayfalar",
+    "email": "ozguryasar_24@hotmail.com"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu.",
+    "not_found": "Sayfa bulunamadı.",
+    "back_home": "Ana Sayfaya Dön",
+    "read_more": "Devamını Oku",
+    "view_all": "Tümünü Gör",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "confirm": "Onayla"
+  }
+}

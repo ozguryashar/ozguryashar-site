@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "label": "Data Analysis & Business Intelligence",
+    "heading": "Turning Raw Data Into Clarity, Clarity Into Decisions",
+    "subtext": "I build custom Power BI reports, dashboard designs, and data modeling solutions tailored to your business.",
+    "cta_primary": "View My Projects",
+    "cta_secondary": "Blog"
+  },
+  "services": {
+    "title": "What I Do",
+    "powerbi": { "title": "Power BI Reporting", "desc": "Custom interactive reports and visual data storytelling for your organization.", "badge": "50+ Reports" },
+    "dashboard": { "title": "Dashboard Design", "desc": "KPI-focused, intuitive, and user-friendly control panels.", "badge": "30+ Dashboards" },
+    "etl": { "title": "Data Modeling & ETL", "desc": "Clean, reliable, and scalable data infrastructure setup.", "badge": "10+ Pipelines" },
+    "consulting": { "title": "Analytics Consulting", "desc": "Data strategy, process improvement, and team training.", "badge": "5+ Years" }
+  },
+  "featured_projects": {
+    "title": "Featured Projects",
+    "view": "Live Demo →",
+    "all": "View All Projects"
+  },
+  "latest_posts": {
+    "title": "Latest Posts",
+    "all": "Read All Posts",
+    "min_read": "min read",
+    "posts": [
+      { "title": "Time Intelligence in Power BI with DAX", "date": "Aug 10, 2025", "read_time": "8", "tags": ["DAX", "Power BI"] },
+      { "title": "Star Schema vs Snowflake: Which to Choose?", "date": "Aug 2, 2025", "read_time": "6", "tags": ["Data Modeling", "SQL"] },
+      { "title": "5 Critical Mistakes in ETL Pipeline Design", "date": "Jul 25, 2025", "read_time": "5", "tags": ["ETL", "Python"] }
+    ]
+  },
+  "about_teaser": {
+    "bio": "With 5+ years in the data world, I deliver custom Power BI solutions, data modeling, and analytics consulting services to businesses.",
+    "cta": "More About Me →",
+    "skills": ["Power BI", "DAX", "Power Query", "SQL", "Python"]
+  },
+  "contact_strip": {
+    "title": "Let's Talk About Your Project",
+    "subtitle": "Write for a free discovery call.",
+    "email_btn": "ozguryasar_24@hotmail.com",
+    "linkedin_label": "LinkedIn"
+  },
+  "projects_page": {
+    "title": "Projects",
+    "meta_desc": "Explore my Power BI reports, dashboard designs, and data modeling projects.",
+    "subtitle": "Explore my Power BI reports, dashboard designs, and data modeling work.",
+    "filter_all": "All",
+    "view_report": "View Report",
+    "hide_report": "Close",
+    "fullscreen": "Full Screen",
+    "live_report": "View Live Report",
+    "loading": "Loading report...",
+    "similar_cta": "Want a Similar Project?",
+    "no_projects": "No projects in this category yet.",
+    "industries": ["Retail", "Finance", "Logistics", "Manufacturing", "Healthcare", "E-commerce"],
+    "detail": {
+      "industry": "Industry",
+      "tech": "Technologies Used",
+      "date": "Date",
+      "cta_title": "Want this type of report?",
+      "cta_btn": "Request a Project",
+      "related": "Related Projects",
+      "back": "← Back to Projects"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "meta_desc": "Articles on data, analytics, and business intelligence. Power BI, DAX, SQL, and data modeling.",
+    "subtitle": "Articles on data, analytics, and business intelligence.",
+    "read_more": "Read More",
+    "read": "Read →",
+    "min_read": "min read",
+    "no_posts": "No posts yet.",
+    "no_posts_desc": "Content will be added soon.",
+    "search_placeholder": "Search posts...",
+    "tag_all": "All",
+    "prev": "← Previous",
+    "next": "Next →",
+    "back": "← Back to Blog",
+    "author_bio": "Data & Business Intelligence specialist. 5+ years of experience in Power BI, DAX, and data modeling.",
+    "share_title": "Share",
+    "share_copy": "Copy Link",
+    "share_copied": "Copied!",
+    "share_linkedin": "Share on LinkedIn",
+    "toc_title": "Table of Contents",
+    "related_title": "Related Posts",
+    "by": "By Özgür Yaşar",
+    "loading": "Loading posts..."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Solutions I built for real business problems.",
+    "view_project": "View Project",
+    "featured": "Featured",
+    "no_projects": "No projects yet.",
+    "loading": "Loading projects..."
+  },
+  "about": {
+    "title": "About",
+    "meta_desc": "Özgür Yaşar — Data & Business Intelligence Specialist. 5+ years of experience in Power BI, DAX, SQL, and data modeling.",
+    "hero_title": "Data & Business Intelligence Specialist",
+    "bio": "I build custom Power BI reporting and dashboard solutions for businesses. I don't just visualize data — I surface meaningful insights that drive real business decisions.",
+    "cta_linkedin": "LinkedIn",
+    "cta_contact": "Get in Touch",
+    "skills_title": "Areas of Expertise",
+    "skills": {
+      "core_title": "Core Tools",
+      "core": [
+        { "name": "Power BI", "level": 95 },
+        { "name": "DAX", "level": 90 },
+        { "name": "Power Query", "level": 88 },
+        { "name": "Data Modeling", "level": 85 }
+      ],
+      "data_title": "Data & Engineering",
+      "data": [
+        { "name": "SQL", "level": 88 },
+        { "name": "Python (pandas)", "level": 75 },
+        { "name": "ETL", "level": 80 },
+        { "name": "Azure Data Factory", "level": 70 }
+      ],
+      "strategy_title": "Strategy & Design",
+      "strategy": [
+        { "name": "KPI Design", "level": 90 },
+        { "name": "Data Storytelling", "level": 85 },
+        { "name": "Dashboard UX", "level": 88 }
+      ]
+    },
+    "experience_title": "Experience",
+    "experience": [
+      {
+        "company": "Freelance / Independent Consultant",
+        "role": "Data & BI Consultant",
+        "period": "2022 — Present",
+        "bullets": [
+          "Designed 50+ Power BI dashboards for SMBs and enterprise clients",
+          "Data modeling and ETL process consulting",
+          "Reporting infrastructure setup and team training"
+        ]
+      },
+      {
+        "company": "Previous Position",
+        "role": "Business Analyst / BI Developer",
+        "period": "2020 — 2022",
+        "bullets": [
+          "Designed and developed corporate reporting systems",
+          "Analysis of sales and operations data",
+          "Management reports and KPI dashboards"
+        ]
+      },
+      {
+        "company": "Internship / Early Career",
+        "role": "Data Analyst",
+        "period": "2019 — 2020",
+        "bullets": [
+          "Data cleaning and reporting with SQL and Excel",
+          "Dashboard prototype development",
+          "Involvement in business intelligence processes"
+        ]
+      }
+    ],
+    "certs_title": "Certifications",
+    "certs": [
+      { "name": "Microsoft PL-300", "full": "Power BI Data Analyst Associate", "issuer": "Microsoft", "year": "2023" },
+      { "name": "DP-900", "full": "Azure Data Fundamentals", "issuer": "Microsoft", "year": "2022" },
+      { "name": "SQL Advanced", "full": "HackerRank SQL (Advanced)", "issuer": "HackerRank", "year": "2022" }
+    ],
+    "why_title": "Why Work With Me?",
+    "why": [
+      { "title": "Freelance Flexibility", "desc": "Fast turnaround, direct communication, and flexible working model — faster than an in-house team." },
+      { "title": "Measurable Results", "desc": "Every report is tied to a KPI goal. Functional solutions designed to extract decisions from data, not just look pretty." },
+      { "title": "Long-Term Support", "desc": "The work doesn't end at delivery. I'm available for updates, maintenance, and improvements after handoff." }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "meta_desc": "Get in touch with Özgür Yaşar for your project. Power BI, dashboard, and data consulting.",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "form_title": "Send a Message",
+    "name": "Full Name",
+    "name_placeholder": "John Smith",
+    "company": "Company",
+    "company_placeholder": "Company name (optional)",
+    "email": "Email",
+    "email_placeholder": "john@company.com",
+    "subject": "Subject",
+    "subject_placeholder": "Choose a subject",
+    "subjects": [
+      { "value": "powerbi", "label": "Power BI Report" },
+      { "value": "dashboard", "label": "Dashboard Design" },
+      { "value": "consulting", "label": "Data Consulting" },
+      { "value": "other", "label": "Other" }
+    ],
+    "message": "Message",
+    "message_placeholder": "Tell me briefly about your project...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success_title": "Message sent!",
+    "success_desc": "I'll get back to you shortly, usually within 24 hours.",
+    "success_reset": "Send Another Message",
+    "error": "Something went wrong. Please try again.",
+    "validation": {
+      "name_required": "Full name is required.",
+      "email_required": "Email is required.",
+      "email_invalid": "Please enter a valid email.",
+      "message_required": "Message is required.",
+      "message_min": "Message must be at least 10 characters."
+    },
+    "info_title": "Contact Info",
+    "email_label": "Email",
+    "email_value": "ozguryasar_24@hotmail.com",
+    "linkedin_label": "LinkedIn",
+    "linkedin_value": "linkedin.com/in/ozguryasar1",
+    "response_time_label": "Response Time",
+    "response_time": "I usually respond within 24 hours.",
+    "location_label": "Location",
+    "location": "Istanbul, Turkey",
+    "timezone": "UTC+3 — Working in Turkey time"
+  },
+  "footer": {
+    "tagline": "From data to decisions.",
+    "rights": "© 2025 Özgür Yaşar. All rights reserved.",
+    "nav_title": "Pages",
+    "email": "ozguryasar_24@hotmail.com"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "not_found": "Page not found.",
+    "back_home": "Back to Home",
+    "read_more": "Read More",
+    "view_all": "View All",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm"
+  }
+}

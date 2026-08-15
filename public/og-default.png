@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F3460"/>
+  <rect x="60" y="60" width="1080" height="510" rx="16" fill="#122d55"/>
+  <text x="600" y="240" font-family="Inter,sans-serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">Özgür Yaşar</text>
+  <text x="600" y="320" font-family="Inter,sans-serif" font-size="32" fill="#F2C811" text-anchor="middle">Data &amp; Business Intelligence</text>
+  <text x="600" y="400" font-family="Inter,sans-serif" font-size="24" fill="rgba(255,255,255,0.6)" text-anchor="middle">Power BI · DAX · SQL · Veri Modelleme</text>
+  <text x="600" y="500" font-family="Inter,sans-serif" font-size="20" fill="rgba(255,255,255,0.4)" text-anchor="middle">ozguryashar.site</text>
+</svg>
